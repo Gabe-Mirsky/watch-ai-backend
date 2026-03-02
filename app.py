@@ -4,7 +4,8 @@ import requests
 
 app = FastAPI()
 
-API_KEY = "AIzaSyBRJ_Yyx8kPJoJl5ExfzWhH3Jr8tec24Fw"
+import os
+API_KEY = os.environ.get("AIzaSyBRJ_Yyx8kPJoJl5ExfzWhH3Jr8tec24Fw", "")
 
 class Prompt(BaseModel):
     prompt: str
