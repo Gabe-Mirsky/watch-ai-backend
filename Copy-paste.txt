@@ -1,0 +1,3 @@
+cd C:/Users/arilo/Downloads/Watch_App 
+
+py -m uvicorn app:app --reload
